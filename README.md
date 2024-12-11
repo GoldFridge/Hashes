@@ -1,1 +1,11 @@
-# Hashes
+# Hashes and encryption
+
+Hashes and encryption are two foundational concepts in information security, often confused but serving distinct purposes. Both are crucial for protecting data, but their techniques and applications differ significantly. This essay provides a concise overview of these concepts and their roles in secure systems.
+
+A hash is a fixed-size value derived from an input of any size through a mathematical algorithm. Hash functions are one-way, meaning it is computationally infeasible to reverse a hash back into its original input. Key characteristics of hash functions include determinism, fixed-size output, computational efficiency, collision resistance, and the avalanche effect, where even a minor change in input results in a vastly different output. Common hashing algorithms include MD5, which is now considered insecure; SHA-256, which offers strong collision resistance; and BLAKE2, optimized for speed and security. Hashing is widely used for data integrity checks, digital signatures, and securely storing passwords.
+
+Encryption, on the other hand, transforms plaintext into ciphertext using an algorithm and a key. Unlike hashing, encryption is reversible when the correct key is available. There are two main types of encryption: symmetric, where the same key is used for both encryption and decryption, and asymmetric, which employs a public key for encryption and a private key for decryption. Symmetric algorithms like AES are efficient for large datasets, while asymmetric algorithms like RSA are commonly used for secure key exchanges and digital certificates. Encryption ensures data confidentiality, secures communications like HTTPS, and protects sensitive files.
+
+The primary difference between hashing and encryption lies in their purpose. Hashing is designed to verify data integrity, creating a unique fingerprint of the input, while encryption focuses on data confidentiality, transforming information so that only authorized parties can access it. Additionally, hashing is a one-way process, whereas encryption allows for decryption.
+
+Both hashing and encryption are indispensable tools in modern security systems. While hashing excels in verifying data authenticity and integrity, encryption ensures that sensitive information remains private. Together, they form the backbone of secure communications and data protection in the digital age.
